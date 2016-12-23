@@ -32,7 +32,10 @@ class ArticleController extends Controller
     					];
     	$data['ownjs'] = [
     						'/media/js/select2.min.js',
-    						'/own-js/article/add.js',
+                            '/plugins/ueditor/ueditor.config.js?r='.rand(0, 50),
+                            '/plugins/ueditor/ueditor.all.min.js',
+    						'/own-js/article/add.js?r='.rand(0, 50),
+
     					];
 
     	$data['allTagInfo'] = Tag::orderBy('displayorder', 'asc')->get();

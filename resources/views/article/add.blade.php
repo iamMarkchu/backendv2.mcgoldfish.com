@@ -67,22 +67,14 @@
                                                 <span class="help-inline"><span style="color:red;">*</span>&nbsp若不填,url默认为/article/文章id.html</span>
                                             </div>
                                         </div>
-                                        <eq name="isMarkDown" value="1">
-                                            <div class="control-group">
-                                                <label class="control-label">上传md文件</label>
-                                                <div class="controls">
-                                                    <input type="file" name="markDownFile" />
-                                                </div>
+                                        <div class="control-group">
+                                            <label class="control-label">文章内容</label>
+                                            <div class="controls">
+                                                 <script id="container" name="content" type="text/plain">
+                                                    这里写你的初始化内容
+                                                </script>
                                             </div>
-                                        </eq>
-                                        <neq name="isMarkDown" value="1">
-                                            <div class="control-group">
-                                                <label class="control-label">文章内容</label>
-                                                <div class="controls">
-                                                    <textarea id="editor" name="content" placeholder="Balabala" autofocus></textarea>
-                                                </div>
-                                            </div>
-                                        </neq>
+                                        </div>
                                         <div class="control-group">
                                             <label class="control-label">维护等级</label>
                                             <div class="controls">

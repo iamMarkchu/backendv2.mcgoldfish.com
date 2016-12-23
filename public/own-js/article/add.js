@@ -13,6 +13,7 @@
             $('#addArticleTag').modal({show:false});
             $('#addArticleCategory').modal({show:false});
             $('#alert-modal').modal({show:false});
+            var ue = UE.getEditor('container');
             $('#addOneTag').click(function(){
                  $('#addArticleTag').modal('show');
             });
@@ -151,9 +152,6 @@
                 param.top = Math.round((maxHeight - param.height) / 2);
                 return param;
             }
-            /*window.onbeforeunload = function() {
-                 return "您的编辑未保存，是否要离开本页面?";     
-            }*/
         }
     };
     $(function () {
